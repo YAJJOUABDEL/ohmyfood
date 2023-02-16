@@ -58,18 +58,45 @@ label {
   border-radius: 20px;
   padding:15px 10px  15px 10px;
   justify-content: space-between;
-  z-index: 9999;
 }
-
+.choix-element{
+  margin-bottom: 25px;
+}
+.chiffre{
+  display: flex;
+  border-radius: 100%;
+  width: 24px;
+  height: 24px;
+  justify-content: center;
+  background-color: var(--purple);
+  color: white;
+  }
 .container-img {
     position: relative;
 }
 .container-img span {
-  color: white;
+    color: white;
     position: absolute;
     right: 10px;
     top: 10px;
     background-color: var(--green-light);
     padding: 5px 5px 5px 5px;
     margin-top: 10px;
+}
+.choix-content{
+  width: 100%;
+  display: flex;
+  gap: 5%;
+}
+.icon-choix{
+  display: block;
+ margin: auto 0;
+ padding-left: 15px;
+}
+.search-input{
+  border: none;
+  background-color: transparent;
+}
+.search-box{
+  background-color: lightgrey;
 }
