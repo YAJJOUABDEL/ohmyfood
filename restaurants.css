@@ -1,2 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Shrikhand&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700;800;900&family=Roboto&display=swap');
+img {
+  width: 100%;
+  height: 360px;
+  border-radius: 20px;
+  object-fit: cover;
+}
