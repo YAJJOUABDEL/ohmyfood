@@ -161,11 +161,12 @@ footer{
   padding-top: 15px;
   padding-bottom: 15px;
 }
-.foot,h3{
+.foot{
   font-family: "shrikhand",cursive;
   font-weight: 400;
-  margin-bottom: 20px;
+  padding-bottom: 20px;
 }
+
 .icon-fourchette{
   padding-right: 10px;
 }
