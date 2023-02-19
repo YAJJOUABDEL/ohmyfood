@@ -3,9 +3,15 @@
 
 /***** Palette de couleur *****/
   :root {
-    --purple:#9356DC; 
-    --pink:#FF79DA;
-    --green-light:#99E2D0;
+    --purple:#9356dc; 
+    --pink:#ff79da;
+    --green-light:#99e2D0;
+    --light-gray:#f6f6f6;
+    --light--pink:#f5edff;
+    --gray:#f7f7f7;
+    --dark-gray:#eaeaea;
+    --light-black:#353535;
+    --green:#008766;
   }
   a {
     text-decoration: none;
@@ -17,10 +23,11 @@
     font-family: "Roboto", sans-serif;
     max-width: 1500px;
     flex-direction: column;
+    margin: 20px;
   }
   header {
-    
-    justify-content: center;
+    box-shadow: 0px 10px 10px -15px #111; 
+    z-index: 1;
   }
 
    header h1{
@@ -48,8 +55,10 @@ img {
 #choix-menu{
   text-align: center;
 }
-.btn-explore{
-  margin-top: 40px;
+.explore-content{
+  margin-top: 0;
+  padding: 50px;
+  background-color: var(--gray);
 }
 .restaurants{
   margin-top: 80px;
@@ -60,22 +69,24 @@ img {
   margin: 10px;
 }
 /****** Bouton Explorer ******/
-label {
-  border: 1px solid;
+.btn-explore {
   border-radius: 20px;
   padding: 10px 20px 10PX 20px;
-  background-color: var(--purple);
+  background: linear-gradient(var(--pink),var(--purple));
   color: white;
-  font-size: 21px;
+  font-size: 25px;
+  box-shadow: 0 3px 8px darkgray;
 }
+
 .explo{
-  margin-top: 60px;
+  margin-top: 40px;
+  margin-bottom: 20px;
 }
 /******************************/
 .menu{
   margin-top: 100px;
 }
-.choix-element,.chiffre {
+.choix-element {
   display: flex;
   list-style-type: none;
   border: 1px solid transparent;
@@ -83,16 +94,25 @@ label {
   border-radius: 20px;
   padding:15px 10px  15px 10px;
   justify-content: space-between;
-}
-.choix-element{
   margin-bottom: 25px;
+  background-color: var(--light-gray);
 }
-
+.choix-element:hover{
+  background-color: var(--light--pink);
+}
+/******* Survole changement de couleur *******/
+.choix-element:hover .icon-choix{
+  color: var(--purple);
+}
+/********************************************/
 .chiffre{
   display: flex;
   border-radius: 100%;
-  width: 5px;
-  
+  width: 30px;
+  height: 30px;
+  position: relative;
+  left: -25px;
+  align-items: center;
   justify-content: center;
   background-color: var(--purple);
   color: white;
@@ -101,13 +121,16 @@ label {
     position: relative;
 }
 .container-img span {
-    color: white;
+    color: var(--green);
+    font-weight: bold;
     position: absolute;
     right: 10px;
     top: 10px;
     background-color: var(--green-light);
-    padding: 5px 5px 5px 5px;
-    margin-top: 10px;
+    padding: 10px;
+    margin-top: 5px;
+    margin-right: 5px;
+    border-radius: 2px;
 }
 .choix-content{
   width: 100%;
@@ -115,20 +138,25 @@ label {
   gap: 5%;
   align-items: flex-end;
 }
+/******* Icon Fonctionnement *******/
 .icon-choix{
   display: block;
  margin: auto 0;
  padding-left: 15px;
+ font-size: 20px;
+ color: lightgrey;
 }
+/*********************************/
 .search-input{
   border: none;
   background-color: transparent;
   padding: 15px;
   font-size: 14px;
+  font-family: "roboto",sans-serif;
 }
 /*******Bouton de recherche de ville********/
 .search-box{
-  background-color: lightgrey;
+  background-color: var(--dark-gray);
 }
 
 /****** Les coeurs ******/
@@ -153,7 +181,7 @@ label {
 }
 /*******Footer*******/
 footer{
-  background-color: black;
+  background-color: var(--light-black);
   color: white;
   width: 100%;
   margin-top: 50px;
