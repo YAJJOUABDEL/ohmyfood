@@ -42,6 +42,11 @@
   box-shadow: 0 3px 8px lightgrey;
   border-radius: 20px;
   margin-bottom: 20px;
+  transition-duration: 0.1s;
+}
+.card:hover {
+    transform: scale(1.02);
+    box-shadow: 0 0 2px;
 }
 img {
   width: 100%;
@@ -62,6 +67,7 @@ img {
 }
 .restaurants{
   margin-top: 80px;
+  background-color: var(--gray);
 }
 .bold{
   font-weight: 900;
