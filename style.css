@@ -62,7 +62,7 @@ img {
 }
 .explore-content{
   margin-top: 0;
-  padding: 50px;
+  padding: 5;
   background-color: var(--gray);
 }
 .restaurants{
@@ -80,7 +80,8 @@ img {
   padding: 10px 20px 10PX 20px;
   background: linear-gradient(var(--pink),var(--purple));
   color: white;
-  font-size: 25px;
+  font-size: 16px;
+  font-weight: 500;
   box-shadow: 0 3px 8px darkgray;
 }
 
