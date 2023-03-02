@@ -178,19 +178,8 @@ img {
 }
 .layout-heart:hover .icon-heart{
   display: none;
-  color: linear-gradient(var(--pink),var(--purple));
-}
-.icon-heart-fill{
-  display: none;
-  padding-top: 15px;
-  font-size: 30px;
-  padding-right: 10px;
-}
-.layout-heart:hover .icon-heart-fill{
-  display: inline-block;
-  padding-top: 15px;
-  font-size: 30px;
-  padding-right: 10px
+  background-image: linear-gradient(var(--pink),var(--purple));
+  font-weight: bold;
 }
 .layout{
   padding-left: 10px;
