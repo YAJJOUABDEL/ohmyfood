@@ -30,9 +30,9 @@ img {
   border-radius: 20px;
   object-fit: cover;
 }
-header h1{
-font-family: "shrihand",cursive;
-font-size: 2em;
+header h1,h2{
+font-family: "shrikhand",cursive;
+
 }
 .titre{
   text-align: center;
@@ -51,6 +51,22 @@ font-size: 2em;
   justify-content: space-between;
   margin-bottom: 20px;
 }
+span{
+  color: #3e3e3e;
+  font-weight: 400;
+  padding-left: 10px;
+}
+.icon-circle{
+ display: flex;
+ margin-right: 30px;
+ margin-top: 37px;
+ font-size: 22px;
+}
+.description{
+
+  padding-left: 10px;
+}
+
 .command {
   text-align: center;
 }
