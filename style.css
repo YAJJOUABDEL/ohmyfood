@@ -74,7 +74,7 @@ img {
 /****** Bouton Explorer ******/
 .btn-explore {
   border-radius: 20px;
-  padding: 10px 20px 10PX 20px;
+  padding: 10px 20px 10px 20px;
   background: linear-gradient(var(--pink),var(--purple));
   color: white;
   font-size: 16px;

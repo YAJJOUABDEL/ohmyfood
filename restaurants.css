@@ -51,6 +51,18 @@ font-size: 2em;
   justify-content: space-between;
   margin-bottom: 20px;
 }
+.command {
+  text-align: center;
+}
+.btn-command{
+  border-radius: 20px;
+  padding: 10px 20px 10px 20px;
+  background: linear-gradient(var(--pink),var(--purple));
+  color: white;
+  font-size: 16px;
+  font-weight:500;
+  box-shadow:0 3px 8px var(--dark-gray);
+}
 /****** Footer ******/
 
 footer{
