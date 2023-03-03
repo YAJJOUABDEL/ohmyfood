@@ -1,8 +1,76 @@
 @import url('https://fonts.googleapis.com/css2?family=Shrikhand&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700;800;900&family=Roboto&display=swap');
+
+/***** Palette de couleur *****/
+  :root {
+    --purple:#9356dc; 
+    --pink:#ff79da;
+    --green-light:#99e2D0;
+    --light-gray:#f6f6f6;
+    --light--pink:#f5edff;
+    --gray:#f7f7f7;
+    --dark-gray:#eaeaea;
+    --light-black:#353535;
+    --green:#008766;
+  }
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+  body{
+    box-sizing: border-box;
+    display: flex;
+    font-family: "Roboto", sans-serif;
+    max-width: 1500px;
+    flex-direction: column;
+  }
 img {
   width: 100%;
   height: 360px;
   border-radius: 20px;
   object-fit: cover;
+}
+header h1{
+font-family: "shrihand",cursive;
+font-size: 2em;
+}
+.titre{
+  text-align: center;
+}
+.titre-menu{
+  display: flex;
+  justify-content: space-between;
+}
+.icon-heart{
+  font-size: 30px;
+}
+.article-menu{
+  border: 1px solid;
+  border-radius: 20px;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+/****** Footer ******/
+
+footer{
+  background-color: var(--light-black);
+  color: white;
+  width: 100%;
+  margin-top: 50px;
+  padding-left: 20px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+.foot{
+  font-family: "shrikhand",cursive;
+  font-weight: 400;
+  padding-bottom: 20px;
+}
+
+.icon-fourchette{
+  padding-right: 10px;
+}
+.icon-hand{
+  padding-right: 10px;
 }
