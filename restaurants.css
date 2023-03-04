@@ -18,19 +18,17 @@
     color: inherit;
   }
   body{
+    display: flex;
     box-sizing: border-box;
     display: flex;
     font-family: "Roboto", sans-serif;
     max-width: 1500px;
     flex-direction: column;
   }
-  main{
-    background-color: var(--gray);
-  }
+  
 img {
   width: 100%;
   height: 360px;
-  border-radius: 20px;
   object-fit: cover;
 }
 header h1,h1{
@@ -41,8 +39,13 @@ font-family: "shrikhand",cursive;
   text-align: center;
 }
 .titre-menu{
+  position: relative;
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  background-color: var(--gray);
+  bottom: 77px;
+  border-radius: 48px 48px 0 0;
 }
 .titre-menu,h1{
   padding-left: 5px;
@@ -50,7 +53,6 @@ font-family: "shrikhand",cursive;
 }
 .icon-heart{
   font-size: 30px;
-  padding-top: 30px;
   padding-right: 30px;
 }
 .article-menu{
@@ -61,6 +63,12 @@ font-family: "shrikhand",cursive;
   display: flex;
   justify-content: space-between;
   margin-bottom: 20px;
+}
+.menus{
+  background-color: var(--gray);
+  position: relative;
+  bottom: 100px;
+  padding-bottom: 49px;
 }
 
 /****** Apparition progressive des pages Menu ******/
@@ -120,19 +128,19 @@ span{
  font-size: 22px;
 }
 .description{
-
   padding-left: 10px;
 }
 
 .command {
   text-align: center;
+  padding-top: 25px;
 }
 .btn-command{
-  border-radius: 20px;
-  padding: 10px 20px 10px 20px;
+  border-radius: 30px;
+  padding: 10px 50px 10px 50px;
   background: linear-gradient(var(--pink),var(--purple));
   color: white;
-  font-size: 16px;
+  font-size: 32px;
   font-weight:500;
   box-shadow:0 3px 8px var(--dark-gray);
 }
@@ -142,10 +150,11 @@ footer{
   background-color: var(--light-black);
   color: white;
   width: 100%;
-  margin-top: 50px;
   padding-left: 20px;
   padding-top: 15px;
   padding-bottom: 15px;
+  bottom: 101px;
+  position: relative;
 }
 .foot{
   font-family: "shrikhand",cursive;
