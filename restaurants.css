@@ -50,6 +50,8 @@ font-family: "shrikhand",cursive;
 }
 .icon-heart{
   font-size: 30px;
+  padding-top: 30px;
+  padding-right: 30px;
 }
 .article-menu{
   border: 1px solid transparent;
@@ -61,7 +63,7 @@ font-family: "shrikhand",cursive;
   margin-bottom: 20px;
 }
 
-/****** Apparition des choix ******/
+/****** Apparition progressive des pages Menu ******/
 
 #article_1, #article_4, #article_7 {
   animation: apparition 600ms ease-in;
@@ -157,7 +159,6 @@ footer{
 .icon-hand{
   padding-right: 10px;
 }
-
 
 
 
