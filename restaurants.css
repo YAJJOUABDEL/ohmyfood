@@ -70,6 +70,11 @@ font-family: "shrikhand",cursive;
   bottom: 100px;
   padding-bottom: 49px;
 }
+/*******Couleur du coeur au survole*******/
+.icon-heart:hover{
+  font-weight: 900;
+  color: var(--purple);
+}
 
 /****** Apparition progressive des pages Menu ******/
 
@@ -121,11 +126,15 @@ span{
   font-weight: 400;
   padding-left: 10px;
 }
+
 .icon-circle{
  display: flex;
  margin-right: 30px;
  margin-top: 37px;
  font-size: 22px;
+ font-weight: 900;
+ background-color: var(--green-light);
+ color: white;
 }
 .description{
   padding-left: 10px;
