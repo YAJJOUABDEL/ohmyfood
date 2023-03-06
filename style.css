@@ -176,10 +176,9 @@ img {
   font-size: 30px;
   padding-right: 10px; 
 }
-.layout-heart:hover .icon-heart{
-  display: none;
-  background-image: linear-gradient(var(--pink),var(--purple));
+.icon-heart:hover{
   font-weight: 900;
+  color: var(--purple);
 }
 .layout{
   padding-left: 10px;
