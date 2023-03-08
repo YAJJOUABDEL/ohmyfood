@@ -134,35 +134,21 @@ span{
   padding-left: 10px;
 }
 .prix{
+  text-align: center;
   font-weight: 700;
   display: flex;
   justify-content: flex-end;
   align-items: flex-end;
   padding-left: 8px;
 }
-.valid-choix{
-  display: flex;
-  background-color: var(--green-light);
-  margin: -16px -80px -16px -16px;
-  align-items: center;
-  justify-content: center;
-  transition-duration:0.5s;
-  width: 64px;
-}
-.select-choix{
-  height: 25px;
-  width: 25px;
-  background-color: var(--white);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 100px;
-  transform: rotate(180deg);
-  transition-duration: 0.5s;
-}
+
 
 .icon-circle{
  color: var(--white);
+ background-color: var(--green-light);
+}
+.icon-circle:hover{
+  transform: rotate(360deg);
 }
 .description{
   padding-left: 10px;
