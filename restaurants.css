@@ -135,7 +135,13 @@ font-family: "shrikhand",cursive;
   position: relative;
 }
 .plats{
-  color:#3e3e3e ;
+  color:#3e3e3e;
+  font-weight: 400;
+  padding-left: 10px;
+  position: relative;
+}
+.desserts{
+  color:#3e3e3e;
   font-weight: 400;
   padding-left: 10px;
   position: relative;
@@ -157,12 +163,6 @@ font-family: "shrikhand",cursive;
   position: absolute;
   left: 9px;
   bottom: 213px;
-}
-.desserts{
-  color:#3e3e3e ;
-  font-weight: 400;
-  padding-left: 10px;
-  position: relative;
 }
 .desserts:after{
    content: "";
