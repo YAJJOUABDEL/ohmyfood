@@ -128,11 +128,52 @@ font-family: "shrikhand",cursive;
 .menu-description{
   margin: 0;
 }
-span{
+.entrées{
   color: #3e3e3e;
   font-weight: 400;
   padding-left: 10px;
+  position: relative;
 }
+.plats{
+  color:#3e3e3e ;
+  font-weight: 400;
+  padding-left: 10px;
+  position: relative;
+}
+.entrées:after{
+  content: "";
+  width: 48px;
+  height: 4px;
+  background-color: var(--green-light);
+  position: absolute;
+  left: 9px;
+  bottom: 213px;
+}
+.plats:after{
+  content: "";
+  width: 48px;
+  height: 4px;
+  background-color: var(--green-light);
+  position: absolute;
+  left: 9px;
+  bottom: 213px;
+}
+.desserts{
+  color:#3e3e3e ;
+  font-weight: 400;
+  padding-left: 10px;
+  position: relative;
+}
+.desserts:after{
+   content: "";
+  width: 48px;
+  height: 4px;
+  background-color: var(--green-light);
+  position: absolute;
+  left: 9px;
+  bottom: 213px;
+}
+
 .prix{
   text-align: center;
   font-weight: 700;
