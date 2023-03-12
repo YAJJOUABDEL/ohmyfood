@@ -177,7 +177,7 @@ h3{
     transform: rotate(-360deg);
   }
 }
-i:hover{
+.icon-circle:hover{
   animation:check-spin 0.5s ease;
 }
 /********************************************************************/
