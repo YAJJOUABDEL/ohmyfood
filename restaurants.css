@@ -178,7 +178,7 @@ h3{
   }
 }
 .icon-circle:hover{
-  animation:check-spin 0.5s ease;
+  animation:check-spin 0.5s ease-in-out;
 }
 /********************************************************************/
 .description{
@@ -186,8 +186,15 @@ h3{
   flex-direction: column;
   justify-content: center;
   padding-left: 10px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
 }
-
+h4,p{
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
 .command {
   text-align: center;
   padding-top: 25px;
