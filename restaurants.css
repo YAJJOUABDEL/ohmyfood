@@ -57,13 +57,16 @@ font-family: "shrikhand",cursive;
   padding-right: 30px;
 }
 .article-menu{
+  padding-top: 12px;
+  padding-bottom: 12px;
   border: 1px solid transparent;
   background-color: white;
   box-shadow: 0 3px 8px lightgrey;
-  border-radius: 20px;
+  border-radius: 10px;
   display: flex;
   justify-content: space-between;
   margin-bottom: 20px;
+  overflow: hidden;
 }
 .menus{
   background-color: var(--gray);
@@ -79,15 +82,15 @@ font-family: "shrikhand",cursive;
 
 /****** Apparition progressive des pages Menu ******/
 
-#article_1, #article_4, #article_7 {
+#article_1, #article_2, #article_3 {
   animation: apparition 600ms ease-in;
 }
 
-#article_2, #article_5, #article_8 {
+#article_4, #article_5, #article_6 {
   animation: apparition 1.2s ease-in;
 }
 
-#article_3, #article_6, #article_9 {
+#article_7, #article_8, #article_9 {
   animation: apparition 1.8s ease-in;
 }
 
@@ -128,70 +131,60 @@ font-family: "shrikhand",cursive;
 .menu-description{
   margin: 0;
 }
-.entrées{
-  color: #3e3e3e;
-  font-weight: 400;
-  padding-left: 10px;
-  position: relative;
+h3{
+  color: #7c7c7c;
+  font-weight: 300;
+  font-size: 16px;
+  padding-left: 13px;
 }
-.plats{
-  color:#3e3e3e;
-  font-weight: 400;
-  padding-left: 10px;
-  position: relative;
-}
-.desserts{
-  color:#3e3e3e;
-  font-weight: 400;
-  padding-left: 10px;
-  position: relative;
-}
-.entrées:after{
-  content: "";
-  width: 48px;
-  height: 4px;
-  background-color: var(--green-light);
-  position: absolute;
-  left: 9px;
-  bottom: 213px;
-}
-.plats:after{
-  content: "";
-  width: 48px;
-  height: 4px;
-  background-color: var(--green-light);
-  position: absolute;
-  left: 9px;
-  bottom: 213px;
-}
-.desserts:after{
-   content: "";
-  width: 48px;
-  height: 4px;
-  background-color: var(--green-light);
-  position: absolute;
-  left: 9px;
-  bottom: 213px;
+.subline{
+  border-bottom: 3px solid var(--green-light);
 }
 
 .prix{
-  text-align: center;
-  font-weight: 700;
   display: flex;
-  justify-content: flex-end;
   align-items: flex-end;
+  margin-left: auto;
+  font-weight: 700;
   padding-left: 8px;
+  padding-right: 10px;
 }
+/******************** Animation du circle-Check ******************/
 
-
+.select-choix {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--green-light);
+  position: relative;
+  width: 50px;
+  height: 50px;
+  margin-right: -53px;
+  transition: all 0.7s;
+}
+.article-menu:hover .select-choix{
+  margin-right: 0;
+}
 .icon-circle{
- color: var(--white);
- background-color: var(--green-light);
+  color: white;
+  font-size: 30px;
 }
-.icon-circle:hover{
-  transform: rotate(360deg);
+@keyframes check-spin{
+  0%{
+    transform: rotate(0deg);
+  }
+  100%{
+    transform: rotate(-360deg);
+  }
 }
+i:hover{
+  animation:check-spin 0.5s ease;
+}
+/********************************************************************/
 .description{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   padding-left: 10px;
 }
 
