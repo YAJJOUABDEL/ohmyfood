@@ -27,21 +27,26 @@
   }
   .loader{
     position: fixed;
-    background-color:#ffffff ;
+    display: grid;
+    place-items: center;
+    background-color:var(--pink) ;
     height: 100%;
     inset: 0;
     z-index: 1;
     opacity: 0.9;
-    animation: disappear 5s;
+    animation: disappear 6s;
     animation-fill-mode:forwards ;
     transform-origin: top;
+    color: var(--purple);
   }
-  .load {
-      animation: spin 3sc;
+
+  .fa-spinner {
+    animation: spin 3s infinite linear;
   }
+  
   @keyframes disappear{
     from {
-      transform: scale(1);
+      transform: scal(1);
     }
     to {
       transform: scale(0);
@@ -210,7 +215,6 @@ img {
 
 .icon-heart:hover {
   font-weight: 900;
-  transition: color 1s ease-out;
 }
 
 .layout{
