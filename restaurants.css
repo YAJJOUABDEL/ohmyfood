@@ -12,7 +12,7 @@
     --dark-gray:#eaeaea;
     --light-black:#353535;
     --green:#008766;
-    --white:ffffff;
+    --white:#ffffff;
   }
   a {
     text-decoration: none;
@@ -54,12 +54,10 @@ font-family: "shrikhand",cursive;
 }
 
 .article-menu{
-  padding-top: 12px;
-  padding-bottom: 12px;
   border: 1px solid transparent;
   background-color: white;
   box-shadow: 0 3px 8px lightgrey;
-  border-radius: 10px;
+  border-radius: 15px;
   display: flex;
   justify-content: space-between;
   margin-bottom: 20px;
@@ -123,7 +121,7 @@ font-family: "shrikhand",cursive;
 @keyframes apparition {
   0% {
     opacity: 0;
-    transform: translateY(20px);
+    transform: translateY(50%);
   }
   to {
     opacity: 1;
@@ -153,7 +151,8 @@ h3{
   margin-left: auto;
   font-weight: 700;
   padding-left: 8px;
-  padding-right: 10px;
+  padding-right: 18px;
+  padding-bottom: 10px;
 }
 /******************** Animation du circle-Check ******************/
 
@@ -163,10 +162,12 @@ h3{
   justify-content: center;
   background-color: var(--green-light);
   position: relative;
-  width: 50px;
-  height: 50px;
-  margin-right: -53px;
+  width: 59px;
+  height: 62px;
+  margin-right: -59px;
   transition: all 0.7s;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 .article-menu:hover .select-choix{
   margin-right: 0;

@@ -29,13 +29,13 @@
     position: fixed;
     display: grid;
     place-items: center;
-    background-color:var(--pink) ;
+    background-color:white;
     height: 100%;
     inset: 0;
-    z-index: 1;
-    opacity: 0.9;
+    z-index: 2;
+    opacity: 1;
     animation: disappear 5s;
-    animation-fill-mode:forwards ;
+    
     transform-origin: top;
     color: darkgreen;
   }
