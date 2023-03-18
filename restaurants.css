@@ -76,12 +76,14 @@ font-family: "shrikhand",cursive;
   right: 30px;
   font-size: 30px;
   padding-right: 10px;
-  background: linear-gradient(to right, var(--purple), var(--pink));
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  
 }
 .icon-heart:hover{
   font-weight: 900;
+  background: linear-gradient(to bottom, var(--purple), var(--pink));
+  transition: background-size 2s;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 /****** Apparition progressive des pages Menu ******/
