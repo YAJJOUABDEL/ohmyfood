@@ -22,7 +22,7 @@
     box-sizing: border-box;
     display: flex;
     font-family: "Roboto", sans-serif;
-    max-width: 1500px;
+    max-width: 1900px;
     flex-direction: column;
     margin: 20px;
   }
