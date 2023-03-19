@@ -80,7 +80,7 @@ font-family: "shrikhand",cursive;
 }
 .icon-heart:hover{
   font-weight: 900;
-  background: linear-gradient(to bottom left, var(--purple), var(--pink));
+  background: linear-gradient(to bottom left, var(--purple) 30%, var(--pink));
   transition: background-size 2s;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -219,7 +219,7 @@ h4,p{
 .btn-command:hover{
   opacity: 0.8;
   transition: 0.3s;
-  box-shadow: 0 3px 8px var(--dark-gray);
+  box-shadow: 0 3px 8px var(--light-black);
 
 }
 
