@@ -207,6 +207,7 @@ h4,p{
   padding-top: 25px;
 }
 .btn-command{
+  opacity: 1;
   border-radius: 30px;
   padding: 10px 50px 10px 50px;
   background: linear-gradient(var(--pink),var(--purple));
@@ -215,6 +216,13 @@ h4,p{
   font-weight:500;
   box-shadow:0 3px 8px var(--dark-gray);
 }
+.btn-command:hover{
+  opacity: 0.8;
+  transition: 0.3s;
+  box-shadow: 0 3px 8px var(--dark-gray);
+
+}
+
 /****** Footer ******/
 
 footer{
