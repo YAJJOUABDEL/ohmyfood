@@ -106,6 +106,7 @@ img {
 }
 /****** Bouton Explorer ******/
 .btn-explore {
+  opacity: 1;
   border-radius: 20px;
   padding: 10px 20px 10px 20px;
   background-image: linear-gradient(var(--pink),var(--purple));
@@ -123,8 +124,10 @@ img {
   justify-content: center;
 }
 .btn-explore:hover{
+  opacity: 0.8;
   background-color: var(--white);
-  box-shadow: 4px 4px 10px var(--dark-gray);
+  box-shadow: 0px 3px 8px var(--dark-gray);
+  transition: 0.3s;
 }
 /******************************/
 .menu{
