@@ -265,3 +265,28 @@ footer{
 .icon-hand{
   padding-right: 10px;
 }
+
+/**************** Mode Desktop et Tablette ******************/
+@media (min-width:768px){
+.menu{
+  padding-left: 30px;
+}
+#choix-menu{
+  display: flex;
+  gap: 30px;
+}
+.choix-element{
+  display: flex;
+  flex-direction:row;
+  width: 25%;
+}
+.foot{
+  display: flex;
+  justify-content: center;
+}
+.footer{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+}
