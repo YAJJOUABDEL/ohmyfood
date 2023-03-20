@@ -248,5 +248,31 @@ footer{
   padding-right: 10px;
 }
 
-
+/**************** Mode Desktop et Tablette ******************/
+@media (min-width:768px){
+.titre-menu, h1{
+  justify-content: center;
+}
+.titre-menu{
+  margin-left: 192px;
+  margin-right: 193px;
+}
+.icon-heart{
+  display: flex;
+  left: 20px;
+}
+.menus{
+  margin-left: 192px;
+  margin-right: 193px;
+}
+.articles{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-content: center;
+}
+.entrées, .plats, .desserts{
+  width: 50%;
+}
+}
 
