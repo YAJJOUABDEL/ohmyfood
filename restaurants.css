@@ -34,7 +34,7 @@ img {
 }
 .titre{
 font-family: "shrikhand",cursive;
-font-size: 37px;
+font-size: 30px;
 font-weight: 400;
 font-style: italic;
 }
@@ -55,6 +55,7 @@ font-style: italic;
   font-weight: 400;
   font-family: "shrikhand",cursive;
   font-style: italic;
+  font-size: 30px;
 }
 
 .article-menu{
