@@ -250,10 +250,11 @@ footer{
   bottom: 101px;
   position: relative;
 }
-.foot{
+.food{
   font-family: "shrikhand",cursive;
   font-weight: 400;
   padding-bottom: 20px;
+  font-style: italic;
 }
 
 .icon-fourchette{
