@@ -208,24 +208,34 @@ h4,p{
   overflow: hidden;
 }
 .command {
+  display: flex;
   text-align: center;
   padding-top: 25px;
+  justify-content: center;
 }
 .btn-command{
+  display: flex;
+  justify-content: center;
+  align-content: center;
   opacity: 1;
   border-radius: 30px;
   padding: 10px 50px 10px 50px;
   background: linear-gradient(var(--pink),var(--purple));
   color: white;
-  font-size: 32px;
-  font-weight:500;
   box-shadow:0 3px 8px var(--dark-gray);
+  flex-wrap: wrap;
+  width: 186px;
 }
 .btn-command:hover{
   opacity: 0.8;
   transition: 0.3s;
   box-shadow: 0 3px 8px var(--light-black);
-
+}
+.order {
+  display: flex;
+  justify-content: center;
+  font-weight:500;
+  font-size: 18px;
 }
 
 /****** Footer ******/
@@ -279,5 +289,6 @@ footer{
 .entrées, .plats, .desserts{
   width: 50%;
 }
+
 }
 
