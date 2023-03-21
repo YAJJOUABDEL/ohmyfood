@@ -226,7 +226,7 @@ img {
 
 .icon-heart:hover {
   font-weight: 900;
-  background: linear-gradient(to bottom left, var(--purple) 30%, var(--pink));
+  background: linear-gradient(to bottom, var(--purple) 30%, var(--pink));
   transition: background-size 2s;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -283,6 +283,7 @@ footer{
 .container-restaurants {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
 }
 .foot{
   display: flex;
