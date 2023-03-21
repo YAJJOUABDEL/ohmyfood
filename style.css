@@ -280,6 +280,10 @@ footer{
   flex-direction:row;
   width: 25%;
 }
+.container-restaurants {
+  display: flex;
+  flex-wrap: wrap;
+}
 .foot{
   display: flex;
   justify-content: center;
