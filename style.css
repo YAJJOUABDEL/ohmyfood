@@ -22,8 +22,9 @@
     box-sizing: border-box;
     display: flex;
     font-family: "Roboto", sans-serif;
-    max-width: 1500px;
+    max-width: 1900px;
     flex-direction: column;
+    width: 100%;
   }
   .loader{
     position: fixed;
@@ -230,6 +231,7 @@ img {
   transition: background-size 2s;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  transition: 0.4s;
 }
 
 .layout{
@@ -281,9 +283,9 @@ footer{
   width: 25%;
 }
 .container-restaurants {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
 }
 .foot{
   display: flex;
