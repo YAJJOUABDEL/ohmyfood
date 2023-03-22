@@ -138,9 +138,11 @@ font-style: italic;
 /*********************************/
 .menu-title{
   margin: 0;
+  text-overflow: ellipsis;
 }
 .menu-description{
   margin: 0;
+  text-overflow: ellipsis;
 }
 h3{
   color: #7c7c7c;
