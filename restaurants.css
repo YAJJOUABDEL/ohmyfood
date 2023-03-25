@@ -19,14 +19,20 @@
     color: inherit;
   }
   body{
-    display: flex;
     box-sizing: border-box;
     display: flex;
     font-family: "Roboto", sans-serif;
-    max-width: 1900px;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
-  
+  .maincontainer{
+    display: flex;
+    width: 100%;
+    max-width: 1440px;
+    flex-direction: column;
+    justify-content: center;
+  }
 img {
   width: 100%;
   height: 360px;
@@ -42,13 +48,11 @@ font-style: italic;
   text-align: center;
 }
 .titre-menu{
-  position: relative;
+  
   display: flex;
   justify-content: space-between;
   align-items: center;
   background-color: var(--gray);
-  bottom: 77px;
-  border-radius: 48px 48px 0 0;
 }
 .sens {
   padding-left: 5px;
@@ -56,6 +60,10 @@ font-style: italic;
   font-family: "shrikhand",cursive;
   font-style: italic;
   font-size: 30px;
+}
+.bordure {
+  position: relative;
+  background-color: var(--dark-gray);
 }
 
 .article-menu{
@@ -70,9 +78,7 @@ font-style: italic;
 }
 .menus{
   background-color: var(--gray);
-  position: relative;
-  bottom: 100px;
-  padding-bottom: 49px;
+  
 }
 /*******Couleur du coeur au survole*******/
 
@@ -80,17 +86,15 @@ font-style: italic;
   position: relative;
   right: 30px;
   font-size: 30px;
-  padding-right: 10px;
-  
-}
-.icon-heart:hover{
+  padding-right: 10px;}
+
+  .icon-heart:hover{
   font-weight: 900;
   background: linear-gradient(to bottom, var(--purple) 30%, var(--pink));
   transition: background-size 2s;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-
 /****** Apparition progressive des pages Menu ******/
 
 #article_1, #article_2, #article_3 {
@@ -214,6 +218,7 @@ h4,p{
   text-align: center;
   padding-top: 25px;
   justify-content: center;
+  margin-bottom: 40px;
 }
 .btn-command{
   display: flex;
@@ -249,8 +254,6 @@ footer{
   padding-left: 20px;
   padding-top: 15px;
   padding-bottom: 15px;
-  bottom: 101px;
-  position: relative;
 }
 .food{
   font-family: "shrikhand",cursive;
@@ -267,10 +270,21 @@ footer{
 
 /**************** Mode Desktop et Tablette ******************/
 
-@media (min-width:768px){
+@media (min-width:1032px){
 .titre-menu, h1{
   justify-content: center;
 }
+.bordure-bis {
+  background-color: var(--gray);
+  position: absolute;
+  width: 73%;
+  height: 23%;
+  bottom: -16px;
+  margin-right: 193px;
+  margin-left: 192px;
+  border-radius:20px ;
+}
+
 .titre-menu{
   margin-left: 192px;
   margin-right: 193px;
@@ -290,7 +304,7 @@ footer{
   align-content: center;
 }
 .entrées, .plats, .desserts{
-  width: 50%;
+  width: 60%;
 }
 .footer {
   display: flex;
@@ -300,4 +314,3 @@ footer{
   align-items: center;
 }
 }
-
