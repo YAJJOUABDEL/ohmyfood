@@ -94,6 +94,20 @@ font-style: italic;
   transition: background-size 2s;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  animation-name: fill;
+  animation-duration: 0.8s;
+  animation-fill-mode: forwards;
+}
+@keyframes fill{
+
+  from{
+    color: white;
+    transform: scale(1);
+  }
+  to{
+    color: linear-gradient(to bottom, var(--purple) 30%, var(--pink));
+    transform: scale(1.5);
+  }
 }
 /****** Apparition progressive des pages Menu ******/
 
