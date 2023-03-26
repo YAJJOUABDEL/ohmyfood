@@ -22,7 +22,7 @@
     box-sizing: border-box;
     display: flex;
     font-family: "Roboto", sans-serif;
-    max-width: 1900px;
+    max-width: 1440px;
     flex-direction: column;
     width: 100%;
   }
@@ -219,19 +219,33 @@ img {
 }
 
 .icon-heart {
+  display: flex;
   padding-top: 15px;
   font-size: 30px;
   padding-right: 10px;
+  transition: all .5s;
   
 }
-
-.icon-heart:hover {
+.icon-heart:hover::before {
   font-weight: 900;
-  background: linear-gradient(to bottom, var(--purple) 30%, var(--pink));
   transition: background-size 2s;
+  background: linear-gradient(to bottom, var(--purple) 30%, var(--pink));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  transition: 0.4s;
+  animation-name: fill;
+  animation-duration: 0.8s;
+  animation-fill-mode: forwards;
+}
+ @keyframes fill{
+
+  from{
+    color: white;
+    transform: scale(1);
+  }
+  to{
+    color: linear-gradient(to bottom, var(--purple) 30%, var(--pink));
+    transform: scale(1.5);
+  }
 }
 
 .layout{
