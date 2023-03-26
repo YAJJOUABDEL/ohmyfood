@@ -101,11 +101,9 @@ font-style: italic;
 @keyframes fill{
 
   from{
-    color: white;
     transform: scale(1);
   }
   to{
-    color: linear-gradient(to bottom, var(--purple) 30%, var(--pink));
     transform: scale(1.5);
   }
 }

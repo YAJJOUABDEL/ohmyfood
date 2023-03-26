@@ -47,7 +47,7 @@
   
   @keyframes loader{
     from {
-      transform: scal(1);
+      transform: scale(1);
     }
     to {
       transform: scale(0);
@@ -239,11 +239,11 @@ img {
  @keyframes fill{
 
   from{
-    color: white;
+    
     transform: scale(1);
   }
   to{
-    color: linear-gradient(to bottom, var(--purple) 30%, var(--pink));
+    
     transform: scale(1.5);
   }
 }
