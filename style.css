@@ -21,17 +21,16 @@
   body{
     display: flex;
     box-sizing: border-box;
-    display: flex;
     font-family: "Roboto", sans-serif;
     flex-direction: column;
     justify-content: center;
-    width: 100%;
   }
   .maincontainer{
     display: flex;
     max-width: 1440px;
     justify-content: center;
     flex-direction: column;
+    width: 100%;
   }
   .loader{
     position: fixed;
