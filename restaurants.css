@@ -90,6 +90,7 @@ font-style: italic;
 }
 .entrées, .plats, .desserts{
   width: 90%;
+  padding-left: 18px;
 }
 /*******Couleur du coeur au survole*******/
 
@@ -174,7 +175,6 @@ h3{
   color: #7c7c7c;
   font-weight: 300;
   font-size: 16px;
-  padding-left: 13px;
 }
 .subline{
   border-bottom: 3px solid var(--green-light);
