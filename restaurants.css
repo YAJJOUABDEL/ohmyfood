@@ -62,10 +62,22 @@ font-style: italic;
   font-size: 30px;
 }
 .bordure {
+  display: flex;
+  justify-content: center;
   position: relative;
   background-color: var(--dark-gray);
 }
-
+.bordure-bis{
+  background-color: var(--gray);
+    position: absolute;
+    width: 100%;
+    height: 23%;
+    bottom: -16px;
+    border-radius: 40px 40px 0 0;
+}
+.articles {
+  background-color: var(--light-gray);
+}
 .article-menu{
   border: 1px solid transparent;
   background-color: white;
@@ -76,9 +88,8 @@ font-style: italic;
   margin-bottom: 20px;
   overflow: hidden;
 }
-.menus{
-  background-color: var(--gray);
-  
+.entrées, .plats, .desserts{
+  width: 90%;
 }
 /*******Couleur du coeur au survole*******/
 
@@ -91,20 +102,19 @@ font-style: italic;
   .icon-heart:hover{
   font-weight: 900;
   background: linear-gradient(to bottom, var(--purple) 30%, var(--pink));
-  transition: background-size 2s;
+  transition: background-size 1s;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  animation-name: fill;
-  animation-duration: 0.8s;
-  animation-fill-mode: forwards;
+  animation-name: opacity-fill;
+  animation-duration: 1s;
+  animation-fill-mode: both;
 }
-@keyframes fill{
-
-  from{
-    transform: scale(1);
+@keyframes opacity-fill {
+  0% {
+    opacity: 0;
   }
-  to{
-    transform: scale(1.5);
+  100% {
+    opacity: 1;
   }
 }
 /****** Apparition progressive des pages Menu ******/
@@ -230,7 +240,7 @@ h4,p{
   text-align: center;
   padding-top: 25px;
   justify-content: center;
-  margin-bottom: 40px;
+  padding-bottom: 40px;
 }
 .btn-command{
   display: flex;
@@ -282,7 +292,7 @@ footer{
 
 /**************** Mode Desktop et Tablette ******************/
 
-@media (min-width:1032px){
+@media (min-width:978px){
 .titre-menu, h1{
   justify-content: center;
 }
@@ -292,28 +302,27 @@ footer{
   width: 73%;
   height: 23%;
   bottom: -16px;
-  margin-right: 193px;
-  margin-left: 192px;
   border-radius:20px ;
 }
 
-.titre-menu{
-  margin-left: 192px;
-  margin-right: 193px;
-}
+
 .icon-heart{
   display: flex;
   left: 20px;
 }
 .menus{
-  margin-left: 192px;
-  margin-right: 193px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .articles{
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
   align-content: center;
+  width: 73%;
+  background-color:var(--light-gray);
+  align-items: center;
 }
 .entrées, .plats, .desserts{
   width: 60%;

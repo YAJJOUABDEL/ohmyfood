@@ -23,7 +23,7 @@
     box-sizing: border-box;
     font-family: "Roboto", sans-serif;
     flex-direction: column;
-    justify-content: center;
+    align-items: center;
   }
   .maincontainer{
     display: flex;
@@ -238,19 +238,16 @@ img {
   background: linear-gradient(to bottom, var(--purple) 30%, var(--pink));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  animation-name: fill;
-  animation-duration: 0.8s;
+  animation-name: opacity-fill;
+  animation-duration: 1s;
   animation-fill-mode: forwards;
 }
- @keyframes fill{
-
-  from{
-    
-    transform: scale(1);
+ @keyframes opacity-fill {
+  0% {
+    opacity: 0;
   }
-  to{
-    
-    transform: scale(1.5);
+  100% {
+    opacity: 1;
   }
 }
 
@@ -265,6 +262,7 @@ img {
 }
 /**************** Footer ***************/
 footer{
+  box-sizing: border-box;
   background-color: var(--light-black);
   color: var(--white);
   width: 100%;
