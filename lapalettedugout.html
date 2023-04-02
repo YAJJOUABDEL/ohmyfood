@@ -10,6 +10,7 @@
         <title>La palette du goût</title>
     </head>
     <body>
+        <div class="maincontainer">
         <header>
             <div>
                 <div class="logo">
@@ -22,143 +23,146 @@
             </div>
         </header>
         <main>
-            <img src="./images/restaurants/jay-wennington.jpg">
-            <div class="titre-menu">
-                <h1>La palette du goût</h1>
-            <div class="layout-heart">
-                    <i class="fa-regular fa-heart icon-heart"></i>
-             </div>
-         </div>
+            <div class="bordure">
+            <img src="./images/restaurants/jay-wennington.jpg" alt="La palette du goût">
+                    <div class="bordure-bis"></div>
+                </div>
 
              <!-- liste des menus -->
              <div class="menus">
                 <div class="articles">
+                    <div class="titre-menu">
+                     <h1 class="sens">La palette du goût</h1>
+                 <div class="layout-heart">
+                    <i class="fa-regular fa-heart icon-heart"></i>
+                        </div>
+                    </div>
                     <div class="entrées">
-                        <h3><span>ENTRÉES</span></h3>
+                        <h3><span class="subline">ENTR</span>ÉES</h3>
 
                        <article class="article-menu" id="article_1">
                         <div class="description">
-                            <h4>Fricassée d'escargot</h4>
-                              <p>Au piment d'Espelette</p>
+                            <h4 class="menu-title">Fricassée d'escargot</h4>
+                              <p class="menu-description">Au piment d'Espelette</p>
                         </div>
-                        <div class="prix"><p>25€</p></div>
-                        <div class="select-choix">
-                        <i class="fa-solid fa-circle-check"></i>
+                       <div class="prix"><span>25€</span></div>
+                       <div class="select-choix">
+                        <i class="fa-solid fa-circle-check icon-circle"></i>
                         </div>
                     </article>
 
                       <article class="article-menu" id="article_2">
                          <div class="description">
-                            <h4>Foie gras de canard mi-cuit</h4>
-                             <p>Et ses copeaux de truffe noire</p>
+                            <h4 class="menu-title">Foie gras de canard mi-cuit</h4>
+                             <p class="menu-description">Et ses copeaux de truffe noire</p>
                          </div>
-                         <div class="prix"><p>35€</p></div>
+                       <div class="prix"><span>35€</span></div>
                          <div class="select-choix">
-                             <i class="fa-solid fa-circle-check"></i>
+                             <i class="fa-solid fa-circle-check icon-circle"></i>
                          </div>
                      </article>
 
                      <article class="article-menu" id="article_3">
                          <div class="description">
-                            <h4>Oeuf au plat</h4>
-                              <p>Assaisonné à la truffe sur lit de...</p> 
+                            <h4 class="menu-title">Oeuf au plat</h4>
+                              <p class="menu-description">Assaisonné à la truffe sur lit de caviar</p> 
                          </div>
-                         <div class="prix"><p>20€</p></div>
+                       <div class="prix"><span>20€</span></div>
                          <div class="select-choix">
-                              <i class="fa-solid fa-circle-check"></i>
+                              <i class="fa-solid fa-circle-check icon-circle"></i>
                          </div>
                      </article>
                    </div>
 
                    <div class="plats">
-                        <h3><span>plats</span></h3>
+                        <h3><span class="subline">PLAT</span>S</h3>
                      
                      <article class="article-menu" id="article_4">
                        <div class="description">
-                          <h4>Filet de boeuf aux herbes</h4>
-                            <p>Accompagné de sa ribambelle de légu...</p>
+                          <h4 class="menu-title">Filet de boeuf aux herbes</h4>
+                            <p class="menu-description">Accompagné de sa ribambelle de légumes</p>
                        </div>
-                       <div class="prix"><p>40€</p></div>
+                       <div class="prix"><span>40€</span></div>
                        <div class="select-choix"> 
-                           <i class="fa-solid fa-circle-check"></i>
+                           <i class="fa-solid fa-circle-check icon-circle"></i>
                        </div>
                      </article>
 
                      <article class="article-menu" id="article_5">
                          <div class="description">
-                            <h4>Parmentier de queue de boeuf</h4>
-                              <p>À la truffe noire sur sa purée de panais</p>
+                            <h4 class="menu-title">Parmentier de queue de boeuf</h4>
+                              <p class="menu-description">À la truffe noire sur sa purée de panais</p>
                          </div>     
-                         <div class="prix"><p>35€</p></div>
+                         <div class="prix"><span>35€</span></div>
                          <div class="select-choix">
-                            <i class="fa-solid fa-circle-check"></i>
+                            <i class="fa-solid fa-circle-check icon-circle"></i>
                          </div>
                      </article>
 
                      <article class="article-menu" id="article_6">
                          <div class="description">
-                            <h4>Filet de turbot</h4> 
-                            <p>Aux agrumes</p>
+                            <h4 class="menu-title">Filet de turbot</h4> 
+                            <p class="menu-description">Aux agrumes</p>
                          </div>
-                         <div class="prix"><p>44€</p></div>
+                         <div class="prix"><span>44€</span></div>
                          <div class="select-choix">
-                            <i class="fa-solid fa-circle-check"></i>
+                            <i class="fa-solid fa-circle-check icon-circle"></i>
                          </div>                                
                     </article>
                    </div>
                    
                    <div class="desserts">
-                        <h3><span>desserts</span></h3>
+                        <h3><span class="subline">DESS</span>ERTS</h3>
 
                         <article class="article-menu" id="article_7">
                             <div class="description">
-                               <h4>Paris-Brest</h4>
-                                 <p>Revisité</p>
+                               <h4 class="menu-title">Paris-Brest</h4>
+                                 <p class="menu-description">Revisité</p>
                             </div>
-                            <div class="prix"><p>18€</p></div>
+                            <div class="prix"><span>18€</span></div>
                             <div class="select-choix">      
-                                 <i class="fa-solid fa-circle-check"></i>
+                                 <i class="fa-solid fa-circle-check icon-circle"></i>
                             </div>     
                         </article>
                         
                         <article class="article-menu" id="article_8">
                             <div class="description">
-                                <h4>Macaron au chocolat d'exception</h4>
-                                  <p>Et glace à la vanille de Madagascar</p>
+                                <h4 class="menu-title">Macaron au chocolat d'exception</h4>
+                                  <p class="menu-description">Et glace à la vanille de Madagascar</p>
                              </div>
-                             <div class="prix"><p>22€</p></div>
+                             <div class="prix"><span>22€</span></div>
                              <div class="select-choix">
-                                  <i class="fa-solid fa-circle-check"></i>
+                                  <i class="fa-solid fa-circle-check icon-circle"></i>
                              </div>
                         </article>
-
                         <article class="article-menu" id="article_9">
                             <div class="description"> 
-                              <h4>Mousse au chocolat</h4>
-                                <p>Au piment d'espelette et à la truffe noire</p>
+                              <h4 class="menu-title">Mousse au chocolat</h4>
+                                <p class="menu-description">Au piment d'espelette et à la truffe noire</p>
                             </div>
-                            <div class="prix"><p>23€</p></div>
+                            <div class="prix"><span>23€</span></div>
                             <div class="select-choix">
-                                  <i class="fa-solid fa-circle-check"></i>
+                                  <i class="fa-solid fa-circle-check icon-circle"></i>
                             </div>
                         </article>
                         </div>
 
-                        <div class="btn-explore">
-                             <label>Commander</label>
+                        <div class="command">
+                             <div class="btn-command"><p class="order">Commander</p></div>
                         </div>                                  
                     </div>
                 </div>
+                 </main>
                 <footer>
 
                     <div class="footer">
-                        <h1><a href="#">ohmyfood</a></h1>
+                        <h1><a class="food">ohmyfood</a></h1>
                         <p>
-                            <i class="fa-solid fa-utensils"></i>
+                            <i class="fa-solid fa-utensils icon-fourchette"></i>
                             Proposer un restaurant
                         </p>
                         <p>
-                            <i class="fa-solid fa-handshake-angle"></i>
+                            <i class="fa-solid fa-handshake-angle icon-hand"></i>
                             Devenir partenaire
                         </p>
                         <p>Mention légales</p>
@@ -167,7 +171,5 @@
                         </p>
                     </div>        
                 </footer>
- 
-        </main>
+              </div>  
     </body>
-</html>
