@@ -19,6 +19,7 @@
     color: inherit;
   }
   body{
+    margin: 0;
     box-sizing: border-box;
     display: flex;
     font-family: "Roboto", sans-serif;
@@ -276,6 +277,7 @@ footer{
   padding-left: 20px;
   padding-top: 15px;
   padding-bottom: 15px;
+  box-sizing: border-box;
 }
 .food{
   font-family: "shrikhand",cursive;
