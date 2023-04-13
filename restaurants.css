@@ -73,7 +73,7 @@ img {
   font-weight: 400;
   font-family: "shrikhand",cursive;
   font-style: italic;
-  font-size: 28px;
+  font-size: 24px;
 }
 .bordure {
   display: flex;
@@ -180,6 +180,7 @@ img {
 .menu-title{
   margin: 0;
   text-overflow: ellipsis;
+  overflow: hidden;
 }
 .menu-description{
   margin: 0;
@@ -266,12 +267,12 @@ h4,p{
   align-content: center;
   opacity: 1;
   border-radius: 30px;
-  padding: 10px 50px 10px 50px;
+  padding: 0px 50px;
   background: linear-gradient(var(--pink),var(--purple));
   color: white;
   box-shadow:0 3px 8px var(--dark-gray);
   flex-wrap: wrap;
-  width: 186px;
+  width: 130px;
 }
 .btn-command:hover{
   opacity: 0.8;
@@ -300,6 +301,7 @@ footer{
   font-family: "shrikhand",cursive;
   font-weight: 400;
   padding-bottom: 20px;
+  font-size: 26px;
 }
 .icon-fourchette{
   padding-right: 10px;

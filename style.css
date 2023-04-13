@@ -193,11 +193,14 @@ img {
     margin-right: 5px;
     border-radius: 2px;
 }
+.choix-content p{
+  margin: 0;
+}
 .choix-content{
   width: 100%;
   display: flex;
   gap: 5%;
-  align-items: flex-end;
+  align-items: center;
 }
 /******* Icon Fonctionnement *******/
 .icon-choix{
